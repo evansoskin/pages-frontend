@@ -1,12 +1,21 @@
-.title{
-    font-size: 18pt;
-    color: blueviolet;
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .item{
     margin: 10px;
     font-size: 20pt;
     color: crimson;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.title{
+    font-size: 18pt;
+    color: blueviolet;
 }
 
 .content{
@@ -14,7 +23,8 @@
     color: black;
 }
 
-.username{}
-    font-size: 18pt;
-    color: blueviolet;
+li{
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 20px;
 }

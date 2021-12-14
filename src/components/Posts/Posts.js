@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Posts.css';
 
 class GetPosts extends Component {
     constructor(props){
@@ -41,14 +42,14 @@ class GetPosts extends Component {
             return <div>Loading ...</div>
         }else{
             return(
-                <div>
-                    <ol>
+                <div className="container">
+                    <ol className="item">
                     {
                         posts.map(post => (
                             <li key={post.id} align="start">
                                 <div>
-                                    <p>{post.title} by {post.username}</p>
-                                    <p>{post.content}</p>
+                                    <p className="title">{post.title} by {post.username}</p>
+                                    <p className="content">{post.content}</p>
                                 </div>
                             </li>
                         ))
